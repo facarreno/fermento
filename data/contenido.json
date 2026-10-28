@@ -1,0 +1,24 @@
+{
+ "borrador": false,
+ "modulos": {
+  "M01": "Química del nitrógeno y redox"
+ },
+ "temas": {
+  "ciclo": "Ciclo del nitrógeno",
+  "unidades": "Unidades y normas",
+  "estados": "Estados de oxidación",
+  "redox": "Balance redox",
+  "dqo": "Equivalente de O₂ y DQO",
+  "alcalinidad": "Alcalinidad",
+  "azufre": "Azufre elemental"
+ },
+ "niveles": [
+  "basico",
+  "intermedio",
+  "dificil"
+ ],
+ "items": [],
+ "lecturas": [],
+ "version": "3ce8c4d95d",
+ "generado": "2026-10-28T13:57:14"
+}

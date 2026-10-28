@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fermento</title>
+  <meta name="description" content="Repaso gamificado de fundamentos: sesiones cortas, repaso espaciado y lecturas breves.">
+  <meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16130f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Fermento">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="iconos/icono.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="iconos/icono-180.png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div id="borrador" hidden>BORRADOR · incluye contenido sin revisar</div>
+  <main id="app" aria-live="polite"><p class="cargando">Fermentando…</p></main>
+  <nav id="nav" hidden>
+    <button data-ir="inicio"><span>◉</span>Inicio</button>
+    <button data-ir="lecturas"><span>❧</span>Lecturas</button>
+    <button data-ir="explorar"><span>◇</span>Explorar</button>
+    <button data-ir="progreso"><span>▤</span>Progreso</button>
+  </nav>
+  <div id="toast" role="status"></div>
+  <script type="module" src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+  </script>
+</body>
+</html>
