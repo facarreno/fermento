@@ -1240,7 +1240,7 @@
     },
     {
      "cita": "BWWT (2020)",
-     "ubicacion": "§2.2.3.2, p. 22–23"
+     "ubicacion": "§2.2.3.2, p. 22"
     }
    ],
    "pendiente": true
@@ -1794,7 +1794,7 @@
    "enunciado": "Xu et al. necesitaron 6 d a 15 °C y 3,5 d a 20 °C para remover el nitrato con S⁰. Si la velocidad es inversamente proporcional a ese tiempo, ¿qué Q₁₀ implican?",
    "respuesta": 2.94,
    "tolerancia": 0.02,
-   "explicacion": "Q₁₀ = (r₂₀/r₁₅)^(10/5) = (6/3,5)² = 2,94: el extremo alto del rango 2–3. (Con 3,5/6 redondeado a 0,58 sale 2,97.)",
+   "explicacion": "Q₁₀ = (r₂₀/r₁₅)^(10/5) = (6/3,5)² = 2,94: el extremo alto del rango 2–3.",
    "id": "m02.i.08",
    "nivel": "intermedio",
    "tema": "factores",
@@ -3519,7 +3519,7 @@
      "respuesta": 61.8,
      "tolerancia": 0.02,
      "unidad": "kJ/mol X",
-     "explicacion": "85,8 + 0,6 × (−39,96) = +61,8 kJ/mol X: positivo pero modesto (anammox: +274,8)."
+     "explicacion": "85,8 + 0,6 × (−39,96) = +61,8 kJ/mol X: positivo pero modesto (anammox: +306,7)."
     },
     {
      "tipo": "opcion",
@@ -3559,7 +3559,7 @@
       "Se debe a que se usó HCO₃⁻ en vez de CO₂"
      ],
      "correcta": 0,
-     "explicacion": "Y_max es una cota superior; los cocientes resultantes (2,58 g S⁰/g N, 7,75 g SO₄²⁻/g N) son el máximo consumo."
+     "explicacion": "Y_max es una cota superior; los cocientes resultantes (2,59 g S⁰/g N, 7,78 g SO₄²⁻/g N) son el máximo consumo."
     }
    ],
    "id": "m03.d.03",
@@ -3574,6 +3574,10 @@
     {
      "cita": "BWWT (2020)",
      "ubicacion": "§2.5.1, Ej. 2.6, p. 59"
+    },
+    {
+     "cita": "Lopez-Vazquez et al. (2023)",
+     "ubicacion": "Tabla 2.14, p. 31"
     },
     {
      "cita": "BWWT (2020)",
@@ -4057,7 +4061,7 @@
    "fuentes": [
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Tablas 5–6, p. 9"
+     "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
     },
     {
      "cita": "Huiliñir et al. (2020)",
@@ -4266,7 +4270,7 @@
    "fuentes": [
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Introducción, p. 1–2; §2.5, p. 3 (Kostrytsia et al. 2018, §2.5, p. 315)"
+     "ubicacion": "Introducción, p. 1; §2.5, p. 3 (Kostrytsia et al. 2018: etapa limitante, p. 314–315; modelo, §2.5, p. 315)"
     }
    ],
    "pendiente": true
@@ -4568,7 +4572,7 @@
    "fuentes": [
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Tablas 5–6, p. 9"
+     "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
     },
     {
      "cita": "Huiliñir et al. (2020)",
@@ -4580,7 +4584,7 @@
     },
     {
      "cita": "Sahinkaya & Dursun (2012)",
-     "ubicacion": "Tabla 1, p. 145; p. 144, 147–148"
+     "ubicacion": "Tabla 1, p. 145; §2.2.3, p. 146; p. 144, 147–148"
     }
    ],
    "pendiente": true
@@ -4599,7 +4603,7 @@
    "fuentes": [
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Tablas 5–6, p. 9"
+     "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
     },
     {
      "cita": "Huiliñir et al. (2020)",
@@ -4882,7 +4886,7 @@
    "fuentes": [
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Tablas 5–6, p. 9"
+     "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
     },
     {
      "cita": "Huiliñir et al. (2020)",
@@ -5070,7 +5074,7 @@
     },
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Tablas 5–6, p. 9"
+     "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
     },
     {
      "cita": "Huiliñir et al. (2020)",
@@ -5086,7 +5090,7 @@
     },
     {
      "cita": "Sahinkaya & Dursun (2012)",
-     "ubicacion": "Tabla 1, p. 145; p. 144, 147–148"
+     "ubicacion": "Tabla 1, p. 145; §2.2.3, p. 146; p. 144, 147–148"
     }
    ],
    "pendiente": true
@@ -5770,7 +5774,7 @@
     },
     {
      "cita": "Apuntes propios (2026)",
-     "ubicacion": "cap. 5, §5.3.4 (cita Levenspiel 2012, §3.2 y §3.2.1, p. 12–14)"
+     "ubicacion": "cap. 5, §5.3.4 (cita Levenspiel 2012, §3.2, p. 12, y §3.2.1(a), p. 14)"
     }
    ],
    "pendiente": true
@@ -6455,7 +6459,7 @@
     },
     {
      "cita": "Fogler (2016)",
-     "ubicacion": "§18.4.3, Ec. (18-27), p. 858"
+     "ubicacion": "§18.4.2C, Ecs. (18-26)–(18-27), p. 857–858 (S/S_0 es la Ec. 18-26; X, la 18-27)"
     }
    ],
    "pendiente": true
@@ -6627,7 +6631,7 @@
     },
     {
      "cita": "Sahinkaya & Dursun (2012)",
-     "ubicacion": "§2, p. 145; Tabla 1"
+     "ubicacion": "§2 y Tabla 1, p. 145"
     },
     {
      "cita": "Apuntes propios (2026)",
@@ -7576,23 +7580,23 @@
     },
     {
      "tipo": "opcion",
-     "enunciado": "Paso 6 · Una columna real de S⁰ (Sahinkaya y Dursun) necesitó TRH ≥ 6 h para bajar 50 mg N/L a < 1 mg/L, unas 0,2 kg N/(m³·d) frente a las 3,4 que predice este modelo. ¿Qué falla?",
+     "enunciado": "Paso 6 · Una columna real de S⁰ (Sahinkaya y Dursun) desnitrificó 50 mg N/L con TRH de 4 h, pero no 75 mg N/L: unas 0,3 kg N/(m³·d) frente a las 3,4 que predice este modelo. ¿Qué falla?",
      "opciones": [
       "La ley √S supone donante en exceso; en realidad limita la hidrólisis del S⁰",
-      "La capa límite reduce el flujo unas quince veces",
+      "La capa límite reduce el flujo unas once veces",
       "El nitrato no difunde dentro de la biopelícula",
-      "El área específica real es quince veces mayor"
+      "El área específica real es once veces mayor"
      ],
      "correcta": 0,
      "explicacion": "Ni la difusión del nitrato ni la capa límite (a lo más −30 %) explican el factor. Las fuentes coinciden en que la disolución del S⁰ es el paso limitante y la hidrólisis domina la sensibilidad del modelo."
     },
     {
      "tipo": "numerico",
-     "enunciado": "Paso 7 · Rediseña con orden cero volumétrico limitado por donante, r_v = 0,2 kg N/(m³·d) = 200 g N/(m³·d). Altura del lecho.",
-     "respuesta": 0.96,
+     "enunciado": "Paso 7 · Rediseña con orden cero volumétrico limitado por donante, r_v = 0,3 kg N/(m³·d) = 300 g N/(m³·d). Altura del lecho.",
+     "respuesta": 0.64,
      "tolerancia": 0.02,
      "unidad": "m",
-     "explicacion": "τ_EB = (18 − 2)/200 = 0,08 d = 1,9 h; z = 12 × 0,08 = 0,96 m. Un metro en vez de ocho centímetros: el área de S⁰ expuesta es lo que manda."
+     "explicacion": "τ_EB = (18 − 2)/300 = 0,053 d = 1,3 h; z = 12 × 0,053 = 0,64 m. Más de medio metro en vez de ocho centímetros: el área de S⁰ expuesta es lo que manda."
     }
    ],
    "id": "m06.d.02",
@@ -7618,7 +7622,7 @@
     },
     {
      "cita": "Sahinkaya & Dursun (2012)",
-     "ubicacion": "§2.2, p. 145; §3.1 y Tabla 1, p. 146–147"
+     "ubicacion": "§2.2 y Tabla 1, p. 145; §3.1, p. 146–147; §4.1, p. 148"
     },
     {
      "cita": "Kostrytsia et al. (2018)",
@@ -7988,7 +7992,7 @@
     "Kostrytsia 8,16 × 10⁻⁵ dm²/g; Huiliñir 8,16 × 10⁻⁴ dm²/g"
    ],
    "correcta": 0,
-   "explicacion": "Partículas ~10 veces más finas tienen ~10 veces más área por masa. El corrigendum de Kostrytsia corrige a* de 0,0008164 a 0,00008164 dm²/mg (y K₁ de 5,1 a 0,51); Huiliñir calcula 0,0008163 y su corrigendum aclara que la unidad es dm²/mg. Ojo: la tabla del cap. 6 de los Apuntes tiene estos valores intercambiados.",
+   "explicacion": "Partículas ~10 veces más finas tienen ~10 veces más área por masa. El corrigendum de Kostrytsia corrige a* de 0,0008164 a 0,00008164 dm²/mg (y K₁ de 5,1 a 0,51); Huiliñir calcula 0,0008163 y su corrigendum aclara que la unidad es dm²/mg.",
    "id": "m06.d.09",
    "nivel": "dificil",
    "tema": "hidrolisis_s0",
@@ -8304,7 +8308,7 @@
    "fuentes": [
     {
      "cita": "Shao et al. (2024)",
-     "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+     "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
     },
     {
      "cita": "Benjamin (2014)",
@@ -8457,7 +8461,7 @@
     },
     {
      "cita": "Shao et al. (2024)",
-     "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+     "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
     },
     {
      "cita": "Apuntes propios (2026)",
@@ -8465,7 +8469,7 @@
     },
     {
      "cita": "Benjamin (2014)",
-     "ubicacion": "§8.8–8.9, Ec. 8.9, p. 412–415"
+     "ubicacion": "§8.8–8.9, p. 412 y 414; Ec. 8.9, p. 416"
     },
     {
      "cita": "BWWT (2020)",
@@ -8478,13 +8482,13 @@
    "tipo": "opcion",
    "enunciado": "¿Por qué el N₂ producido por la desnitrificación forma burbujas mientras el N₂O sale mayoritariamente disuelto con el efluente?",
    "opciones": [
-    "El N₂ es unas 50 veces menos soluble: H_cc ≈ 62 frente a ≈ 1,7 del N₂O",
+    "El N₂ es unas 36 veces menos soluble: H_cc ≈ 62 frente a ≈ 1,7 del N₂O",
     "El N₂O reacciona con el agua y queda retenido como ácido",
     "Se produce mucho más N₂O que N₂",
     "El N₂O es más volátil que el N₂"
    ],
    "correcta": 0,
-   "explicacion": "N₂ y O₂ tienen H_cc ≈ 30–60; CO₂ y N₂O, ≈ 1–2. El N₂ sobresatura enseguida; el N₂O se reparte casi por igual entre gas y líquido.",
+   "explicacion": "N₂ y O₂ tienen H_cc ≈ 30–60; CO₂ y N₂O, ≈ 1–2: entre 20 y 50 veces menos solubles. El N₂ sobresatura enseguida; el N₂O se reparte casi por igual entre gas y líquido.",
    "id": "m07.i.06",
    "nivel": "intermedio",
    "tema": "burbujas",
@@ -8527,7 +8531,7 @@
     },
     {
      "cita": "Shao et al. (2024)",
-     "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+     "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
     }
    ],
    "pendiente": true
@@ -8610,7 +8614,7 @@
     },
     {
      "cita": "Benjamin (2014)",
-     "ubicacion": "§9.2, p. 480–481"
+     "ubicacion": "§9.2, p. 481"
     },
     {
      "cita": "Apuntes propios (2026)",
@@ -8656,7 +8660,7 @@
    "fuentes": [
     {
      "cita": "Benjamin (2014)",
-     "ubicacion": "§8.11, Ec. 8.26 y 8.39–8.41, p. 443–448"
+     "ubicacion": "§8.11, Ec. 8.26 y 8.41, p. 443–448"
     },
     {
      "cita": "Apuntes propios (2026)",
@@ -8882,7 +8886,7 @@
     },
     {
      "cita": "Shao et al. (2024)",
-     "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+     "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
     },
     {
      "cita": "Benjamin (2014)",
@@ -8906,7 +8910,7 @@
     },
     {
      "cita": "Benjamin (2014)",
-     "ubicacion": "§8.8–8.9, Ec. 8.9, p. 412–415"
+     "ubicacion": "§8.8–8.9, p. 412 y 414; Ec. 8.9, p. 416"
     },
     {
      "cita": "BWWT (2020)",
@@ -9579,7 +9583,7 @@
    "respuesta": 306,
    "tolerancia": 0.02,
    "unidad": "mg NaHCO₃/L",
-   "explicacion": "2 × 91 = 182 mg CaCO₃/L = 3,64 meq/L × 84,01 = 306 mg/L. Aun así queda bajo los 427 mg/L que exige pH 6,8 en sistema cerrado; en laboratorio, Sahinkaya y Dursun dosificaron 750 mg NaHCO₃/L.",
+   "explicacion": "2 × 91 = 182 mg CaCO₃/L = 3,64 meq/L × 84,01 = 306 mg/L. Aun así queda bajo los 427 mg/L que exige pH 6,8 en sistema cerrado (con la regla de Moon el pH sería 6,63); en laboratorio, Sahinkaya y Dursun dosificaron 750 mg NaHCO₃/L.",
    "id": "m08.i.04",
    "nivel": "intermedio",
    "tema": "ph_diseno",
@@ -9669,7 +9673,7 @@
     },
     {
      "cita": "Kostrytsia et al. (2018)",
-     "ubicacion": "p. 317"
+     "ubicacion": "p. 317; §2, p. 314"
     },
     {
      "cita": "Sahinkaya & Dursun (2012)",
@@ -9730,7 +9734,7 @@
    "respuesta": 116,
    "tolerancia": 0.03,
    "unidad": "d",
-   "explicacion": "65 × 1,06¹⁰ = 65 × 1,79 = 116 d (≈ 4 meses). Con los 90 d de Kostrytsia (a 30 °C) el factor sería aún mayor: de ahí los 4–5 meses de arranque.",
+   "explicacion": "65 × 1,06¹⁰ = 65 × 1,79 = 116 d (≈ 4 meses). Los 90 d de Kostrytsia son a 30 °C: × 1,06¹⁵ = 2,4 ⇒ 216 d (≈ 7 meses). De ahí los 4–7 meses de arranque.",
    "id": "m08.i.09",
    "nivel": "intermedio",
    "tema": "n2o_operacion",
@@ -9738,7 +9742,7 @@
    "fuentes": [
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "§3.1, p. 5"
+     "ubicacion": "§3.1, p. 5; §2, p. 2"
     },
     {
      "cita": "Apuntes propios (2026)",
@@ -9771,7 +9775,7 @@
     },
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "§3, p. 8"
+     "ubicacion": "§3, p. 8; corrigendum (2021), p. 1"
     },
     {
      "cita": "Apuntes propios (2026)",
@@ -10115,7 +10119,7 @@
    "fuentes": [
     {
      "cita": "Benjamin (2014)",
-     "ubicacion": "Fig. 5.18, p. 250 (y tabla de pKa del cap. 5)"
+     "ubicacion": "Fig. 5.18, p. 250–251 (y tabla de pKa del cap. 5)"
     },
     {
      "cita": "Apuntes propios (2026)",
@@ -10233,7 +10237,7 @@
     },
     {
      "cita": "Benjamin (2014)",
-     "ubicacion": "Fig. 5.18, p. 250 (y tabla de pKa del cap. 5)"
+     "ubicacion": "Fig. 5.18, p. 250–251 (y tabla de pKa del cap. 5)"
     },
     {
      "cita": "BWWT (2020)",
@@ -10355,7 +10359,7 @@
     },
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "§3, p. 8"
+     "ubicacion": "§3, p. 8; corrigendum (2021), p. 1"
     }
    ],
    "pendiente": true
@@ -11324,7 +11328,7 @@
    "fuentes": [
     {
      "cita": "BWWT (2020)",
-     "ubicacion": "§2.2.3.2, p. 22–23"
+     "ubicacion": "§2.2.3.2, p. 22"
     },
     {
      "cita": "BWWT (2020)",
@@ -11370,7 +11374,7 @@
      "fuentes": [
       {
        "cita": "BWWT (2020)",
-       "ubicacion": "§2.2.3.2, p. 22–23"
+       "ubicacion": "§2.2.3.2, p. 22"
       },
       {
        "cita": "BWWT (2020)",
@@ -11411,7 +11415,7 @@
      "fuentes": [
       {
        "cita": "BWWT (2020)",
-       "ubicacion": "§2.2.3.2, p. 22–23"
+       "ubicacion": "§2.2.3.2, p. 22"
       },
       {
        "cita": "BWWT (2020)",
@@ -11656,7 +11660,7 @@
     },
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Resumen; §2; §3.3"
+     "ubicacion": "Resumen; §2.3, p. 2; §3.2–3.3"
     },
     {
      "cita": "BWWT (2020)",
@@ -11722,7 +11726,7 @@
       },
       {
        "cita": "Huiliñir et al. (2020)",
-       "ubicacion": "Resumen; §2; §3.3"
+       "ubicacion": "Resumen; §2.3, p. 2; §3.2–3.3"
       },
       {
        "cita": "BWWT (2020)",
@@ -11783,7 +11787,7 @@
       },
       {
        "cita": "Huiliñir et al. (2020)",
-       "ubicacion": "Resumen; §2; §3.3"
+       "ubicacion": "Resumen; §2.3, p. 2; §3.2–3.3"
       },
       {
        "cita": "BWWT (2020)",
@@ -12290,7 +12294,7 @@
     },
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Tablas 5–6, p. 9"
+     "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
     },
     {
      "cita": "Huiliñir et al. (2020)",
@@ -12332,7 +12336,7 @@
       },
       {
        "cita": "Huiliñir et al. (2020)",
-       "ubicacion": "Tablas 5–6, p. 9"
+       "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
       },
       {
        "cita": "Huiliñir et al. (2020)",
@@ -12369,7 +12373,7 @@
       },
       {
        "cita": "Huiliñir et al. (2020)",
-       "ubicacion": "Tablas 5–6, p. 9"
+       "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
       },
       {
        "cita": "Huiliñir et al. (2020)",
@@ -12420,7 +12424,7 @@
     },
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Tablas 5–6, p. 9"
+     "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
     },
     {
      "cita": "BWWT (2020)",
@@ -12470,7 +12474,7 @@
       },
       {
        "cita": "Huiliñir et al. (2020)",
-       "ubicacion": "Tablas 5–6, p. 9"
+       "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
       },
       {
        "cita": "BWWT (2020)",
@@ -12515,7 +12519,7 @@
       },
       {
        "cita": "Huiliñir et al. (2020)",
-       "ubicacion": "Tablas 5–6, p. 9"
+       "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
       },
       {
        "cita": "BWWT (2020)",
@@ -12554,7 +12558,7 @@
     },
     {
      "cita": "Huiliñir et al. (2020)",
-     "ubicacion": "Tablas 5–6, p. 9"
+     "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
     },
     {
      "cita": "Huiliñir et al. (2020)",
@@ -12574,7 +12578,7 @@
     },
     {
      "cita": "Sahinkaya & Dursun (2012)",
-     "ubicacion": "Tabla 1, p. 145; p. 144, 147–148"
+     "ubicacion": "Tabla 1, p. 145; §2.2.3, p. 146; p. 144, 147–148"
     }
    ],
    "preguntas": [
@@ -12612,7 +12616,7 @@
       },
       {
        "cita": "Huiliñir et al. (2020)",
-       "ubicacion": "Tablas 5–6, p. 9"
+       "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
       },
       {
        "cita": "Huiliñir et al. (2020)",
@@ -12632,7 +12636,7 @@
       },
       {
        "cita": "Sahinkaya & Dursun (2012)",
-       "ubicacion": "Tabla 1, p. 145; p. 144, 147–148"
+       "ubicacion": "Tabla 1, p. 145; §2.2.3, p. 146; p. 144, 147–148"
       }
      ],
      "pendiente": true
@@ -12665,7 +12669,7 @@
       },
       {
        "cita": "Huiliñir et al. (2020)",
-       "ubicacion": "Tablas 5–6, p. 9"
+       "ubicacion": "Tabla 5 y §3.3, p. 9; Tabla 6, p. 10"
       },
       {
        "cita": "Huiliñir et al. (2020)",
@@ -12685,7 +12689,7 @@
       },
       {
        "cita": "Sahinkaya & Dursun (2012)",
-       "ubicacion": "Tabla 1, p. 145; p. 144, 147–148"
+       "ubicacion": "Tabla 1, p. 145; §2.2.3, p. 146; p. 144, 147–148"
       }
      ],
      "pendiente": true
@@ -13445,12 +13449,12 @@
   },
   {
    "id": "m06.l.metro_de_azufre",
-   "titulo": "Un metro en vez de ocho centímetros",
+   "titulo": "Medio metro en vez de ocho centímetros",
    "nivel": "dificil",
    "minutos": 3,
    "tema": "hidrolisis_s0",
    "modulo": "M06",
-   "html": "<p>Supongamos que diseñas un lecho de gránulos de azufre de 3 mm para un agua subterránea con 18 mg NO₃-N/L. Haces lo que enseñan los libros de biopelículas: el nitrato difunde hacia una biopelícula gruesa, el flujo crece con √S, integras un flujo pistón a 12 m/d. El resultado es tentador: <strong>unos 10 minutos de contacto y 8,5 cm de lecho</strong>. La tasa volumétrica a la entrada sería de 3,4 kg N/(m³·d).</p>\n<h3>La columna que no obedece</h3>\n<p>Los datos dicen otra cosa. En la columna de Sahinkaya y Dursun, rellena con azufre de 0,5–1 mm, el nitrato bajó de 50 a menos de 1 mg N/L solo con tiempos de residencia de <strong>6 horas o más</strong>; a 4 horas aparecían 9 mg/L de nitrito. Eso es del orden de 0,2 kg N/(m³·d), más de diez veces menos que lo que la difusión permitiría, y con partículas más finas.</p>\n<p>¿La capa límite? En un lecho lento puede medir 255 μm y quitar un 30 % del flujo: no alcanza para explicar el desfase.</p>\n<h3>El donante viene de abajo</h3>\n<p>La pieza que falta es que, en este reactor, el donante no viaja por el agua: <strong>es el soporte</strong>. El S⁰ es prácticamente insoluble y su disolución es el paso limitante. Kostrytsia et al. lo modelaron con una variable nueva, el azufre biodisponible, liberado por una hidrólisis que depende del área de las partículas. Al calibrar el modelo, Huiliñir et al. encontraron que los parámetros más sensibles son justamente los de la hidrólisis. La biopelícula vive en contradifusión: el nitrato baja desde el líquido, el azufre sube desde el gránulo, y la actividad se concentra donde ambos coinciden.</p>\n<p>Si se rediseña con la tasa observada como límite de donante, la cuenta da <strong>1,9 horas y casi un metro de lecho</strong>: un orden de magnitud más.</p>\n<h3>La trampa del grano fino</h3>\n<p>La tentación obvia es moler el azufre: más área, más hidrólisis por gramo. Pero partículas demasiado finas bloquean el lecho, y la biopelícula agrava el problema. Doscientos micrómetros sobre gránulos de 3 mm bajan la porosidad de 0,40 a 0,13 y multiplican la caída de presión por 52. El tamaño óptimo es un compromiso entre la química de la superficie y la hidráulica del poro, y por eso el área de S⁰ expuesta por volumen de lecho es la variable que un modelo del reactor tiene que transportar.</p>",
+   "html": "<p>Supongamos que diseñas un lecho de gránulos de azufre de 3 mm para un agua subterránea con 18 mg NO₃-N/L. Haces lo que enseñan los libros de biopelículas: el nitrato difunde hacia una biopelícula gruesa, el flujo crece con √S, integras un flujo pistón a 12 m/d. El resultado es tentador: <strong>unos 10 minutos de contacto y 8,5 cm de lecho</strong>. La tasa volumétrica a la entrada sería de 3,4 kg N/(m³·d).</p>\n<h3>La columna que no obedece</h3>\n<p>Los datos dicen otra cosa. En la columna de Sahinkaya y Dursun, rellena con azufre de 0,5–1 mm, se desnitrificaron 50 mg N/L con <strong>4 horas</strong> de residencia, aunque a mitad de columna todavía quedaban 9 mg/L de nitrito; con 75 mg N/L la remoción ya fue parcial. Eso es del orden de 0,3 kg N/(m³·d), unas once veces menos que lo que la difusión permitiría, y con partículas más finas.</p>\n<p>¿La capa límite? En un lecho lento puede medir 255 μm y quitar un 30 % del flujo: no alcanza para explicar el desfase.</p>\n<h3>El donante viene de abajo</h3>\n<p>La pieza que falta es que, en este reactor, el donante no viaja por el agua: <strong>es el soporte</strong>. El S⁰ es prácticamente insoluble y su disolución es el paso limitante. Kostrytsia et al. lo modelaron con una variable nueva, el azufre biodisponible, liberado por una hidrólisis que depende del área de las partículas. Al calibrar el modelo, Huiliñir et al. encontraron que los parámetros más sensibles son justamente los de la hidrólisis. La biopelícula vive en contradifusión: el nitrato baja desde el líquido, el azufre sube desde el gránulo, y la actividad se concentra donde ambos coinciden.</p>\n<p>Si se rediseña con la tasa observada como límite de donante, la cuenta da <strong>1,3 horas y unos 64 cm de lecho</strong>: más de siete veces más.</p>\n<h3>La trampa del grano fino</h3>\n<p>La tentación obvia es moler el azufre: más área, más hidrólisis por gramo. Pero partículas demasiado finas bloquean el lecho, y la biopelícula agrava el problema. Doscientos micrómetros sobre gránulos de 3 mm bajan la porosidad de 0,40 a 0,13 y multiplican la caída de presión por 52. El tamaño óptimo es un compromiso entre la química de la superficie y la hidráulica del poro, y por eso el área de S⁰ expuesta por volumen de lecho es la variable que un modelo del reactor tiene que transportar.</p>",
    "fuentes": [
     {
      "cita": "Apuntes propios (2026)",
@@ -13458,7 +13462,7 @@
     },
     {
      "cita": "Sahinkaya & Dursun (2012)",
-     "ubicacion": "§2.2, p. 145; §3.1 y Tabla 1, p. 146–147"
+     "ubicacion": "§2.2 y Tabla 1, p. 145; §3.1, p. 146–147; §4.1, p. 148"
     },
     {
      "cita": "Kostrytsia et al. (2018)",
@@ -13492,7 +13496,7 @@
    "preguntas": [
     {
      "tipo": "opcion",
-     "enunciado": "Según la lectura, ¿por qué un lecho real de S⁰ necesita del orden de un metro y no de ocho centímetros?",
+     "enunciado": "Según la lectura, ¿por qué un lecho real de S⁰ necesita más de medio metro y no ocho centímetros?",
      "opciones": [
       "Porque limita la entrega de azufre por hidrólisis de las partículas, no la difusión del nitrato",
       "Porque la capa límite reduce el flujo de nitrato más de diez veces",
@@ -13512,7 +13516,7 @@
       },
       {
        "cita": "Sahinkaya & Dursun (2012)",
-       "ubicacion": "§2.2, p. 145; §3.1 y Tabla 1, p. 146–147"
+       "ubicacion": "§2.2 y Tabla 1, p. 145; §3.1, p. 146–147; §4.1, p. 148"
       },
       {
        "cita": "Kostrytsia et al. (2018)",
@@ -13547,11 +13551,11 @@
     },
     {
      "tipo": "numerico",
-     "enunciado": "Con una tasa volumétrica limitada por donante de 0,2 kg N/(m³·d), ¿qué tiempo de contacto de lecho vacío hace falta para bajar de 18 a 2 mg N/L?",
-     "respuesta": 1.92,
+     "enunciado": "Con una tasa volumétrica limitada por donante de 0,3 kg N/(m³·d), ¿qué tiempo de contacto de lecho vacío hace falta para bajar de 18 a 2 mg N/L?",
+     "respuesta": 1.28,
      "tolerancia": 0.02,
      "unidad": "h",
-     "explicacion": "τ_EB = (18 − 2) g/m³ ÷ 200 g/(m³·d) = 0,08 d = 1,9 h.",
+     "explicacion": "τ_EB = (18 − 2) g/m³ ÷ 300 g/(m³·d) = 0,053 d = 1,3 h.",
      "id": "m06.l.metro_de_azufre.q2",
      "nivel": "dificil",
      "tema": "hidrolisis_s0",
@@ -13563,7 +13567,7 @@
       },
       {
        "cita": "Sahinkaya & Dursun (2012)",
-       "ubicacion": "§2.2, p. 145; §3.1 y Tabla 1, p. 146–147"
+       "ubicacion": "§2.2 y Tabla 1, p. 145; §3.1, p. 146–147; §4.1, p. 148"
       },
       {
        "cita": "Kostrytsia et al. (2018)",
@@ -13724,7 +13728,7 @@
    "minutos": 3,
    "tema": "burbujas",
    "modulo": "M07",
-   "html": "<p>Un lecho de azufre que trata agua subterránea es un sistema anóxico: nadie le inyecta aire. Y sin embargo, al cabo de unos días aparecen burbujas pegadas a los granos de S⁰ y a la biopelícula. No vienen de afuera. Las fabrica el propio reactor.</p>\n<h3>Un gas que no cabe</h3>\n<p>La ley de Henry dice que, en el equilibrio, la concentración de un gas en la fase gaseosa es proporcional a la del líquido: c_G = H·c_L. Benjamin da a H una lectura muy visual: es el volumen de agua que hace falta para guardar la misma masa de gas que cabe en un litro de aire. Para el oxígeno, H_cc = 31,4: se necesitan 31,4 litros de agua para contener lo que hay en uno de aire. Para el N₂ el número es aún peor, 61,8. El N₂ es, para efectos prácticos, un gas que casi no cabe en el agua.</p>\n<p>Ahora sigue al nitrato. Cada mol que se reduce deja medio mol de N₂ <strong>dentro</strong> del líquido, justo en la biopelícula. El agua subterránea ya llega saturada de N₂ con el aire, unos 14 mg/L. Si el lecho remueve 18 mg N/L, el N₂ disuelto más que se duplica y su presión parcial de equilibrio sube a unas 1,75 atm. Para que ese gas siguiera disuelto haría falta una columna de agua de casi 8 metros encima. Una columna de laboratorio de uno o dos metros apenas añade 0,1–0,2 atm: está sobresaturada de arriba abajo.</p>\n<h3>Dónde se forma la burbuja</h3>\n<p>BWWT describe lo mismo en reactores de lodo granular: la saturación depende de la presión local, atmosférica más hidrostática, y cuando el líquido la supera nacen burbujas pequeñas. En un lecho fijo esas burbujas no salen con facilidad: ocupan poros, acortan el tiempo de residencia y abren caminos preferenciales. Parte de lo que una RTD muestra como «flujo no ideal» puede ser, sencillamente, gas atrapado.</p>\n<h3>El gas que sí se queda</h3>\n<p>El contraste es el N₂O. Su H_cc ronda 1,7 (valor que los Apuntes piden cotejar), unas cincuenta veces menor que el del N₂: a igual volumen, hay casi tanto N₂O en el agua como en el gas. Por eso el N₂ burbujea y el N₂O sale mayoritariamente disuelto con el efluente, donde una medición que solo mire el gas no lo ve.</p>",
+   "html": "<p>Un lecho de azufre que trata agua subterránea es un sistema anóxico: nadie le inyecta aire. Y sin embargo, al cabo de unos días aparecen burbujas pegadas a los granos de S⁰ y a la biopelícula. No vienen de afuera. Las fabrica el propio reactor.</p>\n<h3>Un gas que no cabe</h3>\n<p>La ley de Henry dice que, en el equilibrio, la concentración de un gas en la fase gaseosa es proporcional a la del líquido: c_G = H·c_L. Benjamin da a H una lectura muy visual: es el volumen de agua que hace falta para guardar la misma masa de gas que cabe en un litro de aire. Para el oxígeno, H_cc = 31,4: se necesitan 31,4 litros de agua para contener lo que hay en uno de aire. Para el N₂ el número es aún peor, 61,8. El N₂ es, para efectos prácticos, un gas que casi no cabe en el agua.</p>\n<p>Ahora sigue al nitrato. Cada mol que se reduce deja medio mol de N₂ <strong>dentro</strong> del líquido, justo en la biopelícula. El agua subterránea ya llega saturada de N₂ con el aire, unos 14 mg/L. Si el lecho remueve 18 mg N/L, el N₂ disuelto más que se duplica y su presión parcial de equilibrio sube a unas 1,75 atm. Para que ese gas siguiera disuelto haría falta una columna de agua de casi 8 metros encima. Una columna de laboratorio de uno o dos metros apenas añade 0,1–0,2 atm: está sobresaturada de arriba abajo.</p>\n<h3>Dónde se forma la burbuja</h3>\n<p>BWWT describe lo mismo en reactores de lodo granular: la saturación depende de la presión local, atmosférica más hidrostática, y cuando el líquido la supera nacen burbujas pequeñas. En un lecho fijo esas burbujas no salen con facilidad: ocupan poros, acortan el tiempo de residencia y abren caminos preferenciales. Parte de lo que una RTD muestra como «flujo no ideal» puede ser, sencillamente, gas atrapado.</p>\n<h3>El gas que sí se queda</h3>\n<p>El contraste es el N₂O. Su H_cc ronda 1,7 (valor que los Apuntes piden cotejar), unas 36 veces menor que el del N₂: a igual volumen, hay casi tanto N₂O en el agua como en el gas. Por eso el N₂ burbujea y el N₂O sale mayoritariamente disuelto con el efluente, donde una medición que solo mire el gas no lo ve.</p>",
    "fuentes": [
     {
      "cita": "Benjamin (2014)",
@@ -13736,7 +13740,7 @@
     },
     {
      "cita": "Benjamin (2014)",
-     "ubicacion": "§9.2, p. 480–481"
+     "ubicacion": "§9.2, p. 481"
     },
     {
      "cita": "Apuntes propios (2026)",
@@ -13760,7 +13764,7 @@
     },
     {
      "cita": "Shao et al. (2024)",
-     "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+     "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
     }
    ],
    "preguntas": [
@@ -13790,7 +13794,7 @@
       },
       {
        "cita": "Benjamin (2014)",
-       "ubicacion": "§9.2, p. 480–481"
+       "ubicacion": "§9.2, p. 481"
       },
       {
        "cita": "Apuntes propios (2026)",
@@ -13814,7 +13818,7 @@
       },
       {
        "cita": "Shao et al. (2024)",
-       "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+       "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
       }
      ],
      "pendiente": true
@@ -13839,7 +13843,7 @@
       },
       {
        "cita": "Benjamin (2014)",
-       "ubicacion": "§9.2, p. 480–481"
+       "ubicacion": "§9.2, p. 481"
       },
       {
        "cita": "Apuntes propios (2026)",
@@ -13863,7 +13867,7 @@
       },
       {
        "cita": "Shao et al. (2024)",
-       "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+       "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
       }
      ],
      "pendiente": true
@@ -13882,7 +13886,7 @@
    "fuentes": [
     {
      "cita": "Shao et al. (2024)",
-     "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+     "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
     },
     {
      "cita": "Apuntes propios (2026)",
@@ -13940,7 +13944,7 @@
      "fuentes": [
       {
        "cita": "Shao et al. (2024)",
-       "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+       "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
       },
       {
        "cita": "Apuntes propios (2026)",
@@ -13993,7 +13997,7 @@
      "fuentes": [
       {
        "cita": "Shao et al. (2024)",
-       "ubicacion": "Tabla 3, Ec. 3.1, p. 6–7"
+       "ubicacion": "Tabla 3, Ec. 3.1, p. 6"
       },
       {
        "cita": "Apuntes propios (2026)",
@@ -14076,7 +14080,7 @@
     },
     {
      "cita": "BWWT (2020)",
-     "ubicacion": "§7.3.2, p. 343"
+     "ubicacion": "§7.3.2, p. 342"
     },
     {
      "cita": "Sahinkaya & Dursun (2012)",
@@ -14124,7 +14128,7 @@
       },
       {
        "cita": "BWWT (2020)",
-       "ubicacion": "§7.3.2, p. 343"
+       "ubicacion": "§7.3.2, p. 342"
       },
       {
        "cita": "Sahinkaya & Dursun (2012)",
@@ -14179,7 +14183,7 @@
       },
       {
        "cita": "BWWT (2020)",
-       "ubicacion": "§7.3.2, p. 343"
+       "ubicacion": "§7.3.2, p. 342"
       },
       {
        "cita": "Sahinkaya & Dursun (2012)",
@@ -14340,7 +14344,7 @@
    "minutos": 3,
    "tema": "incertidumbres_diseno",
    "modulo": "M08",
-   "html": "<p>Al final del capítulo queda una tabla limpia: 18,8 m³ de lecho en dos columnas, 4,9 kg de azufre al día, 22 toneladas iniciales, 4,5 horas de contacto, un arranque de 4 a 5 meses. Parece un reactor terminado. No lo es: cada fila descansa en un supuesto, y la parte honesta del diseño es escribirlos al lado.</p>\n<h3>Un θ hecho a mano</h3>\n<p>La carga de diseño, 0,10 kg N/m³·d, sale de corregir a 15 °C una carga de 25 °C. Pero ninguna fuente da el coeficiente de temperatura para azufre: se <strong>derivó</strong> de tres tiempos de reacción de un solo estudio (6, 3,5 y 2,5 días a 15, 20 y 30 °C), y dio θ = 1,06, con un rango plausible de 1,035 a 1,08. Toda la columna crece o se encoge con ese número.</p>\n<h3>Gránulos que no son lentejas</h3>\n<p>Los modelos de hidrólisis del azufre se calibraron con lentejas finas. El área por masa es inversa al radio: con gránulos de 2 mm es unas <strong>diez veces menor</strong>, y la hidrólisis se satura más lento. Y la literatura no siempre dice si su carga se refiere al volumen total de un lecho azufre-caliza o solo al azufre: con un lecho 1:1, esa ambigüedad duplica el volumen o la frecuencia de reposición.</p>\n<h3>El pH de papel</h3>\n<p>Los 427 mg/L de bicarbonato para llegar a pH 6,8 son de un sistema cerrado. En la columna real, el nitrógeno que burbujea arrastra CO₂ y el pH sube: el cálculo es una cota inferior, útil para no quedarse corto, pero no un valor.</p>\n<h3>Biomasa supuesta, N₂O desconocido</h3>\n<p>El chequeo de difusión supuso 30 g SSV/L de biopelícula sobre esferas lisas, colonizadas por completo. Sale holgado (el flujo posible es diez veces el necesario), pero nadie ha medido qué fracción de los gránulos está viva. Y el factor de emisión de N₂O del ejemplo, 0,41 %, es un número hipotético: el de verdad está por medirse.</p>\n<h3>Cada duda, su experimento</h3>\n<p>La lista termina convertida en plan: columna piloto en escalones de carga a temperatura controlada; tomografía del lecho para medir porosidad y biopelícula; trazadores periódicos comparados con un modelo CFD que use esa porosidad; perfiles de pH a lo largo de la columna; ensayos batch con gránulos del tamaño real; microsensores de N₂O en los puertos. La hoja de diseño no es el final del trabajo: es la lista de lo que falta medir.</p>",
+   "html": "<p>Al final del capítulo queda una tabla limpia: 18,8 m³ de lecho en dos columnas, 4,9 kg de azufre al día, 22 toneladas iniciales, 4,5 horas de contacto, un arranque de 4 a 7 meses. Parece un reactor terminado. No lo es: cada fila descansa en un supuesto, y la parte honesta del diseño es escribirlos al lado.</p>\n<h3>Un θ hecho a mano</h3>\n<p>La carga de diseño, 0,10 kg N/m³·d, sale de corregir a 15 °C una carga de 25 °C. Pero ninguna fuente da el coeficiente de temperatura para azufre: se <strong>derivó</strong> de tres tiempos de reacción de un solo estudio (6, 3,5 y 2,5 días a 15, 20 y 30 °C), y dio θ = 1,06, con un rango plausible de 1,035 a 1,08. Toda la columna crece o se encoge con ese número.</p>\n<h3>Gránulos que no son lentejas</h3>\n<p>Los modelos de hidrólisis del azufre se calibraron con lentejas finas. El área por masa es inversa al radio: con gránulos de 2 mm es unas <strong>diez veces menor</strong>, y la hidrólisis se satura más lento. Y la literatura no siempre dice si su carga se refiere al volumen total de un lecho azufre-caliza o solo al azufre: con un lecho 1:1, esa ambigüedad duplica el volumen o la frecuencia de reposición.</p>\n<h3>El pH de papel</h3>\n<p>Los 427 mg/L de bicarbonato para llegar a pH 6,8 son de un sistema cerrado. En la columna real, el nitrógeno que burbujea arrastra CO₂ y el pH sube: el cálculo es una cota inferior, útil para no quedarse corto, pero no un valor.</p>\n<h3>Biomasa supuesta, N₂O desconocido</h3>\n<p>El chequeo de difusión supuso 30 g SSV/L de biopelícula sobre esferas lisas, colonizadas por completo. Sale holgado (el flujo posible es diez veces el necesario), pero nadie ha medido qué fracción de los gránulos está viva. Y el factor de emisión de N₂O del ejemplo, 0,41 %, es un número hipotético: el de verdad está por medirse.</p>\n<h3>Cada duda, su experimento</h3>\n<p>La lista termina convertida en plan: columna piloto en escalones de carga a temperatura controlada; tomografía del lecho para medir porosidad y biopelícula; trazadores periódicos comparados con un modelo CFD que use esa porosidad; perfiles de pH a lo largo de la columna; ensayos batch con gránulos del tamaño real; microsensores de N₂O en los puertos. La hoja de diseño no es el final del trabajo: es la lista de lo que falta medir.</p>",
    "fuentes": [
     {
      "cita": "Apuntes propios (2026)",
@@ -14524,6 +14528,6 @@
    "pendiente": true
   }
  ],
- "version": "a0af003ae9",
- "generado": "2026-10-28T15:01:54"
+ "version": "62c500185d",
+ "generado": "2026-10-28T15:33:00"
 }
