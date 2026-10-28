@@ -127,6 +127,12 @@ function avanceDesbloqueo(modulo, nivel) {
 }
 
 // Una sesión: primero lo vencido (más atrasado primero), luego nuevas de niveles desbloqueados.
+// La URL principal y /borrador/ comparten localStorage: los conteos miran solo las tarjetas
+// del contenido cargado, no las de la otra versión.
+function tarjetasDelPool() {
+  return preguntas().map(p => E.tarjetas[p.id]).filter(Boolean);
+}
+
 function armarSesion({ filtro = null, libre = false } = {}) {
   const pool = preguntas().filter(p => !filtro || filtro(p));
   const t = hoy(), n = E.ajustes.porSesion;
@@ -320,7 +326,7 @@ function registrar(p, calidad, ok, xpFijo = null) {
 function pintarResumen() {
   const d = E.diario[hoy()] || { xp: 0 };
   const nv = nivelJugador();
-  const proximas = Object.values(E.tarjetas).filter(t => t.due === sumarDias(hoy(), 1)).length;
+  const proximas = tarjetasDelPool().filter(t => t.due === sumarDias(hoy(), 1)).length;
   $app.innerHTML = `<div class="resumen">
     <div class="grande">+${S.xp} XP</div>
     <p>${S.ok} de ${S.total} respuestas correctas${S.falladas.size ? ` · ${S.falladas.size} volverán pronto` : ''}</p>
@@ -346,7 +352,7 @@ function vistaInicio() {
   const nv = nivelJugador(), d = E.diario[hoy()] || { xp: 0 };
   const plan = armarSesion();
   const sinLeer = D.lecturas.filter(l => !E.lecturas[l.id]).length;
-  const total = preguntas().length, vistas = Object.keys(E.tarjetas).length;
+  const total = preguntas().length, vistas = tarjetasDelPool().length;
   $app.innerHTML = `
     <h1>Fermento</h1>
     <div class="perfil card"><div class="insignia">${nv.n}</div><div style="flex:1"><div class="rango">${esc(nv.rango)}</div>
@@ -389,11 +395,11 @@ function bloqueoTexto() {
 }
 
 function vistaLecturas() {
-  const grupos = ['basico', 'intermedio', 'dificil'].map(nv => {
-    const ls = D.lecturas.filter(l => l.nivel === nv);
-    if (!ls.length) return '';
-    return `<h2>${NOMBRE_NIVEL[nv]}</h2>` + ls.map(l => `<button class="acceso" data-lectura="${esc(l.id)}">
-      <div><b>${esc(l.titulo)}</b><span class="peq mut">${l.minutos} min · ${esc(D.temas[l.tema] || l.tema)}${l.pendiente ? ' · sin revisar' : ''}</span></div>
+  const orden = { basico: 0, intermedio: 1, dificil: 2 };
+  const grupos = modulosDe(D.lecturas).map(m => {
+    const ls = D.lecturas.filter(l => l.modulo === m).sort((a, b) => orden[a.nivel] - orden[b.nivel]);
+    return `<h2>${esc(D.modulos[m])}</h2>` + ls.map(l => `<button class="acceso" data-lectura="${esc(l.id)}">
+      <div><b>${esc(l.titulo)}</b><span class="peq mut">${NOMBRE_NIVEL[l.nivel]} · ${l.minutos} min · ${esc(D.temas[l.tema] || l.tema)}${l.pendiente ? ' · sin revisar' : ''}</span></div>
       <span class="check">${E.lecturas[l.id] ? '✓' : ''}</span></button>`).join('');
   }).join('');
   $app.innerHTML = `<h1>Lecturas</h1><p class="mut">Textos de 1 a 3 minutos. Al terminar respondes sus preguntas y entran al repaso.</p>
@@ -417,36 +423,47 @@ function abrirLectura(id) {
   });
 }
 
-const filtroExplorar = { temas: new Set(), niveles: new Set() };
+const filtroExplorar = { modulos: new Set(), temas: new Set(), niveles: new Set() };
+const modulosDe = pool => Object.keys(D.modulos).filter(m => pool.some(p => p.modulo === m));
 function vistaExplorar() {
   const pool = preguntas();
-  const temas = [...new Set(pool.map(p => p.tema))];
-  const sel = p => (!filtroExplorar.temas.size || filtroExplorar.temas.has(p.tema)) && (!filtroExplorar.niveles.size || filtroExplorar.niveles.has(p.nivel));
+  const F = filtroExplorar;
+  const enModulo = p => !F.modulos.size || F.modulos.has(p.modulo);
+  const temas = F.modulos.size ? [...new Set(pool.filter(enModulo).map(p => p.tema))] : [];
+  F.temas.forEach(t => { if (!temas.includes(t)) F.temas.delete(t); });   // al quitar un módulo, sus temas salen del filtro
+  const sel = p => enModulo(p) && (!F.temas.size || F.temas.has(p.tema)) && (!F.niveles.size || F.niveles.has(p.nivel));
   const n = pool.filter(sel).length;
-  $app.innerHTML = `<h1>Explorar</h1><p class="mut">Elige temas y niveles. Sin selección, entra todo. Aquí no hay candados.</p>
+  $app.innerHTML = `<h1>Explorar</h1><p class="mut">Elige módulos, temas y niveles. Sin selección, entra todo. Aquí no hay candados.</p>
     <h2>Nivel</h2><div class="chips">${['basico', 'intermedio', 'dificil'].map(nv =>
-      `<button class="chip ${filtroExplorar.niveles.has(nv) ? 'on' : ''}" data-nivel="${nv}">${NOMBRE_NIVEL[nv]}</button>`).join('')}</div>
-    <h2>Tema</h2><div class="chips">${temas.map(t =>
-      `<button class="chip ${filtroExplorar.temas.has(t) ? 'on' : ''}" data-tema="${esc(t)}">${esc(D.temas[t] || t)}</button>`).join('')}</div>
+      `<button class="chip ${F.niveles.has(nv) ? 'on' : ''}" data-nivel="${nv}">${NOMBRE_NIVEL[nv]}</button>`).join('')}</div>
+    <h2>Módulo</h2><div class="chips">${modulosDe(pool).map(m =>
+      `<button class="chip ${F.modulos.has(m) ? 'on' : ''}" data-modulo="${esc(m)}">${esc(m.replace(/^M0?/, 'M'))} · ${esc(D.modulos[m])}</button>`).join('')}</div>
+    ${temas.length ? `<h2>Tema</h2><div class="chips">${temas.map(t =>
+      `<button class="chip ${F.temas.has(t) ? 'on' : ''}" data-tema="${esc(t)}">${esc(D.temas[t] || t)}</button>`).join('')}</div>`
+      : '<p class="peq mut">Elige un módulo para filtrar por tema.</p>'}
     <p class="mut">${n} tarjeta${n === 1 ? '' : 's'} en la selección.</p>
     <button class="btn" id="go" ${n ? '' : 'disabled'}>Practicar selección</button>`;
-  $app.querySelectorAll('[data-nivel]').forEach(b => b.onclick = () => { alternar(filtroExplorar.niveles, b.dataset.nivel); vistaExplorar(); });
-  $app.querySelectorAll('[data-tema]').forEach(b => b.onclick = () => { alternar(filtroExplorar.temas, b.dataset.tema); vistaExplorar(); });
+  $app.querySelectorAll('[data-nivel]').forEach(b => b.onclick = () => { alternar(F.niveles, b.dataset.nivel); vistaExplorar(); });
+  $app.querySelectorAll('[data-modulo]').forEach(b => b.onclick = () => { alternar(F.modulos, b.dataset.modulo); vistaExplorar(); });
+  $app.querySelectorAll('[data-tema]').forEach(b => b.onclick = () => { alternar(F.temas, b.dataset.tema); vistaExplorar(); });
   $app.querySelector('#go').onclick = () => iniciarSesion(armarSesion({ filtro: sel, libre: true }).cola, 'Práctica');
 }
 const alternar = (set, v) => set.has(v) ? set.delete(v) : set.add(v);
 
 function vistaProgreso() {
   const pool = preguntas();
-  const temas = [...new Set(pool.map(p => p.tema))];
-  const filaTema = t => {
-    const ps = pool.filter(p => p.tema === t);
+  const filaTema = (ps, nombre) => {
     const cons = ps.filter(p => (E.tarjetas[p.id]?.int || 0) >= DIAS_CONSOLIDADA).length;
     const vis = ps.filter(p => E.tarjetas[p.id]).length - cons;
-    return `<div class="tema-fila"><div class="cab"><span>${esc(D.temas[t] || t)}</span><span class="mut">${cons + vis}/${ps.length}</span></div>
+    return `<div class="tema-fila"><div class="cab"><span>${esc(nombre)}</span><span class="mut">${cons + vis}/${ps.length}</span></div>
       <div class="barra multi"><i style="width:${cons / ps.length * 100}%"></i><i class="vista" style="width:${vis / ps.length * 100}%"></i></div></div>`;
   };
-  const t = hoy(), ts = Object.values(E.tarjetas);
+  const filaModulo = m => {
+    const ps = pool.filter(p => p.modulo === m), temas = [...new Set(ps.map(p => p.tema))];
+    return `<details class="modulo-prog"><summary>${filaTema(ps, D.modulos[m])}</summary>
+      ${temas.map(t => filaTema(ps.filter(p => p.tema === t), D.temas[t] || t)).join('')}</details>`;
+  };
+  const t = hoy(), ts = tarjetasDelPool();
   const venceHoy = ts.filter(x => x.due <= t).length, manana = ts.filter(x => x.due === sumarDias(t, 1)).length;
   const semana = ts.filter(x => x.due > sumarDias(t, 1) && x.due <= sumarDias(t, 7)).length;
   const dias = Array.from({ length: 7 }, (_, i) => sumarDias(t, i - 6));
@@ -458,8 +475,8 @@ function vistaProgreso() {
         return `<div style="flex:1;text-align:center"><div style="height:${Math.max(3, x / maxXP * 60)}px;background:${x >= META_DIARIA ? 'var(--acc)' : 'var(--card2)'};border-radius:4px"></div>
           <div class="peq mut">${'DLMMJVS'[new Date(f + 'T12:00').getDay()]}</div></div>`; }).join('')}</div>
       <p class="peq mut" style="margin-bottom:0">Repasos: ${venceHoy} hoy · ${manana} mañana · ${semana} en la semana</p></div>
-    <div class="card"><b>Dominio por tema</b><p class="peq mut" style="margin:2px 0 0">Oscuro: consolidada (intervalo ≥ ${DIAS_CONSOLIDADA} d). Claro: vista.</p>
-      ${temas.map(filaTema).join('')}</div>
+    <div class="card"><b>Dominio por módulo</b><p class="peq mut" style="margin:2px 0 0">Oscuro: consolidada (intervalo ≥ ${DIAS_CONSOLIDADA} d). Claro: vista. Toca un módulo para ver sus temas.</p>
+      ${modulosDe(pool).map(filaModulo).join('')}</div>
     <div class="card"><b>Ajustes</b>
       <div class="ajuste"><span>Tarjetas por sesión</span><select id="porSesion">${[6, 10, 15, 20].map(v => `<option ${v === E.ajustes.porSesion ? 'selected' : ''}>${v}</option>`).join('')}</select></div>
       <div class="ajuste"><span>Nuevas por sesión</span><select id="nuevas">${[2, 4, 6, 10].map(v => `<option ${v === E.ajustes.nuevas ? 'selected' : ''}>${v}</option>`).join('')}</select></div>

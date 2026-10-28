@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#b5651d"/>
+  <!-- frasco -->
+  <path d="M196 120h120v34c0 10 6 18 14 24 34 24 56 64 56 108v66c0 40-32 72-72 72H198c-40 0-72-32-72-72v-66c0-44 22-84 56-108 8-6 14-14 14-24z"
+        fill="#faf6ee"/>
+  <rect x="184" y="96" width="144" height="34" rx="12" fill="#faf6ee"/>
+  <!-- líquido -->
+  <path d="M142 300c40-18 80 18 114 0s74-18 114 0v52c0 31-25 56-56 56H198c-31 0-56-25-56-56z" fill="#e9b26f"/>
+  <!-- burbujas -->
+  <circle cx="214" cy="356" r="16" fill="#faf6ee"/>
+  <circle cx="290" cy="338" r="11" fill="#faf6ee"/>
+  <circle cx="254" cy="262" r="13" fill="#e9b26f"/>
+  <circle cx="300" cy="222" r="9" fill="#e9b26f"/>
+  <circle cx="226" cy="206" r="7" fill="#e9b26f"/>
+</svg>

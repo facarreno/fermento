@@ -1,6 +1,7 @@
 // Fermento · service worker. Red primero y caché de respaldo: con conexión siempre llega el contenido
 // nuevo; sin conexión la app abre con lo último que vio. Subir VERSION si cambia la lista de archivos.
-const VERSION = 'fermento-v1';
+// La URL principal y /borrador/ tienen cada una su SW: la caché lleva el scope para que no se pisen.
+const VERSION = 'fermento-v1@' + self.registration.scope;
 const ARCHIVOS = ['./', 'index.html', 'estilos.css', 'app.js', 'manifest.webmanifest', 'data/contenido.json',
   'iconos/icono.svg', 'iconos/icono-180.png', 'iconos/icono-192.png', 'iconos/icono-512.png'];
 
@@ -10,7 +11,8 @@ self.addEventListener('install', e => {
 
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys()
-    .then(ks => Promise.all(ks.filter(k => k !== VERSION).map(k => caches.delete(k))))
+    .then(ks => Promise.all(ks.filter(k => k !== VERSION && (k.endsWith('@' + self.registration.scope) || !k.includes('@')))
+      .map(k => caches.delete(k))))
     .then(() => self.clients.claim()));
 });
 
