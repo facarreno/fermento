@@ -382,7 +382,9 @@ function vistaInicio() {
 function bloqueoTexto() {
   if (E.ajustes.todo) return '';
   const msgs = [];
-  for (const m of Object.keys(D.modulos)) {
+  // Solo los módulos que ya empezaste (o el primero), para no llenar el inicio con ocho candados.
+  const empezados = Object.keys(D.modulos).filter(m => D.items.some(i => i.modulo === m && E.tarjetas[i.id]));
+  for (const m of (empezados.length ? empezados : Object.keys(D.modulos).slice(0, 1)).slice(0, 3)) {
     for (const nv of ['intermedio', 'dificil']) {
       if (!D.items.some(i => i.modulo === m && i.nivel === nv)) continue;
       if (desbloqueado(m, nv)) continue;
